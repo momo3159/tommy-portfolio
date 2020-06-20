@@ -2,9 +2,10 @@
   <div class="works">
     <span class="head">WORKS</span>
     <v-app>
-      <v-container class="mt-10">
+      <v-container class="mt-10 ms-auto">
         <v-row>
-          <v-col cols="4" v-for="link in url" v-bind:key="link">
+          <v-col cols="12" xs="12" sm="6" md="3" lg="3" 
+                  v-for="link in url" v-bind:key="link">
             <v-card max-width="344" :href="link" v-bind:key="link" class="card">
               <v-card-title>Java</v-card-title>
               <v-card-text>テトリス！</v-card-text>
