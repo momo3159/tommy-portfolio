@@ -5,10 +5,10 @@
       <v-container class="mt-10 ms-auto">
         <v-row>
           <v-col cols="12" xs="12" sm="6" md="3" lg="3" 
-                  v-for="link in url" v-bind:key="link">
+                  v-for="work in works" v-bind:key="work.name">
             <v-card max-width="344" :href="link" v-bind:key="link" class="card">
-              <v-card-title>Java</v-card-title>
-              <v-card-text>テトリス！</v-card-text>
+              <v-card-title>{{work.name}}</v-card-title>
+              <v-card-text>{{work.content}}</v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -22,7 +22,10 @@ export default {
   name: "Works",
   data: function() {
     return {
-      url: "http;s:s:s:s"
+      works: [
+        {name: 'ポートフォリオ', content: "ポートフォリオです。"},
+        {name: '読書管理アプリ', content: "本を何%読んだかを記録します。これもvue.jsで書き換えたい。"}
+      ]
     };
   }
 };
