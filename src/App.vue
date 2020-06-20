@@ -9,8 +9,11 @@
       <a></a>
     </div>
     <router-view />
+
   </div>
 </template>
+
+
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
@@ -28,6 +31,7 @@
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   padding-bottom: 0;
   width: 100%;
+  background-color: #EEEEEE;
 }
 
 #nav a {

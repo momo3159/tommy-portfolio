@@ -19,5 +19,6 @@ export default {
 h1 {
   font-family: "Orbitron", sans-serif;
   letter-spacing: 7px;
+  
 }
 </style>

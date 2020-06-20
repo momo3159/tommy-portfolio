@@ -2,7 +2,7 @@
   <div id="skills">
     <span class="head">SKILLS</span>
     <v-app>
-      <v-container class="mt-10 ms-auto">
+      <v-container>
         <v-row>
           <v-col
             cols="12"
@@ -12,6 +12,7 @@
             lg="3"
             v-for="skill in skills"
             v-bind:key="skill.name"
+            align="center"
           >
             <v-card max-width="200" class="card">
               <v-progress-circular
@@ -67,11 +68,12 @@ export default {
   font-family: "Orbitron", sans-serif;
 }
 #skills {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 .head {
   font-size: 40px;
   font-weight: bold;
   border-bottom: 3px solid;
+
 }
 </style>
