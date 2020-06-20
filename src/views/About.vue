@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <sapn class="head">ABOUT ME</sapn>
+    <span class="head">ABOUT ME</span>
     <v-app>
     <v-container class="mt-10">
       <table class="aboutTable">
@@ -11,36 +11,23 @@
         </tr>
         <tr>
           <th>interest</th>
-          <td><v-treeview
-    dense
-    :items="items"
-  ></v-treeview></td>
+          <td><v-treeview dense :items="items"></v-treeview></td>
         </tr>
         </tbody>
-        
       </table>
     </v-container>
-
-    
     <div class="btn-container">
-        <div class="github-btn">
-          <v-btn width="150px" height="50px" href="https://github.com/momo3159">
-            <v-fa :icon="['fab', 'github']" size="lg" pull="left"></v-fa>github
-          </v-btn>
-        </div>
-        <div class="twitter-btn">
-          <v-btn width="150px" height="50px" large href="https://twitter.com/0028272826s">
-            <v-fa :icon="['fab', 'twitter']" size="lg" pull="left" color="#00acee"></v-fa><span>Twitter</span>
-          </v-btn>
-        </div>
-          <div class="atcoder-btn">
-          <v-btn width="150px" height="50px" href="https://atcoder.jp/users/Tommy3">
-             <v-fa icon="laptop-code" size="lg" pull="left"></v-fa>AtCoder
-          </v-btn>
-        </div>
-      </div>
+          <a href="https://github.com/momo3159" class="github">
+          <v-fa :icon="['fab', 'github']" size="lg"></v-fa><span class="github-t">github</span></a>
+          <a href="https://twitter.com/0028272826s" class="twitter">
+          <v-fa :icon="['fab', 'twitter']" size="lg"></v-fa><span class="twitter-t">twitter</span></a>
+          <a href="https://atcoder.jp/users/Tommy3" class="atcoder">
+          <v-fa icon="laptop-code" size="lg"></v-fa><span class="atcoder-t">atcoder</span></a>
+    </div>
+
       </v-app>
   </div>
+
 </template>
 
 <script>
@@ -124,9 +111,7 @@ th, td {
   color: #2c3e50;
   
 }
-span {
-  color: #00acee;
-}
+
 .about .btn-container {
   width: 70%;
   margin: 0 auto;
@@ -134,12 +119,40 @@ span {
   justify-content: center;
   margin-top: 15px;
 }
-.about .btn-container .github-btn, .twitter-btn, .atcoder-btn {
-  padding-left: 10px;
+.github, .twitter, .atcoder {
+  margin-right: 10px;
+  background-color: #EEEEEE;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 5px gray;
+}
+.github:active, .twitter:active, .atcoder:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+.twitter {
+  color: #00acee
+}
+.github, .atcoder{
+  color: #171515
+}
+.github-t, .twitter-t, .atcoder-t {
+  padding-left: 5px;
 }
 @media(max-width:670px){
   th, td {
     font-size: 12px;
+  }
+  .btn-container {
+    flex-direction: column;
+      
+  }
+  .github, .twitter, .atcoder{
+    margin: 10px auto;
+
   }
 }
 </style>
