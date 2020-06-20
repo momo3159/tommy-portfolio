@@ -24,7 +24,8 @@ export default {
     return {
       works: [
         {name: 'ポートフォリオ', content: "ポートフォリオです。"},
-        {name: '読書管理アプリ', content: "本を何%読んだかを記録します。これもvue.jsで書き換えたい。"}
+        {name: '読書管理アプリ', content: "本を何%読んだかを記録します。これもvue.jsで書き換えたい。"},
+        {name: 'テトリス', content: "テトリスを自作しました。"}
       ]
     };
   }
