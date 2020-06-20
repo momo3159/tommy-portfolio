@@ -49,9 +49,6 @@ export default {
         { name: "JavaScript", per: 50, month: 0 },
         { name: "Vue.js", per: 100, month: 0 },
         { name: "Go", per: 10, month: 0 },
-        { name: "ad", per: 100, month: 0 },
-        { name: "af", per: 1, month: 0 },
-        { name: "afd", per: 13, month: 0 },
         { name: "Git", per: 12, month: 0 }
       ]
     };
