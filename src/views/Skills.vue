@@ -10,7 +10,7 @@
             sm="6"
             md="3"
             lg="3"
-            v-for="(skill, i) in skills"
+            v-for="skill in skills"
             v-bind:key="skill.name"
           >
             <v-card max-width="200" class="card">
@@ -25,7 +25,7 @@
                 {{ skill.name }}<br />
                 {{ skill.per }}%
               </v-progress-circular>
-              <v-card-text>{{ i }}年</v-card-text>
+              <v-card-text>{{skill.month}}年</v-card-text>
             </v-card>
           </v-col>
         </v-row>
