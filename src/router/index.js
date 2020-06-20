@@ -1,8 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import VueParticles from 'vue-particles'
 import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
+Vue.use(VueParticles)
 
 const routes = [
   {
