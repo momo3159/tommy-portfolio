@@ -46,6 +46,10 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 #home {
   font-family: "Orbitron", sans-serif;
-  margin-top: 100px;
+  margin-top: 0px;
+}
+#home img {
+  width: 100vw;
+  max-height: 700px;
 }
 </style>
