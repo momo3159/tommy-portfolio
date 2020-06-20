@@ -4,14 +4,23 @@
     <v-app>
     <v-container class="mt-10">
       <table class="aboutTable">
-        <tr v-for="(value, key) in info" v-bind:key="key">
-          <v-row class="mt-4">
+        <tbody>
+          <tr v-for="(value, key) in info" v-bind:key="key">
             <th>{{ key }}</th>
             <td>{{ value }}</td>
-          </v-row>
         </tr>
+        <tr>
+          <th>interest</th>
+          <td><v-treeview
+    dense
+    :items="items"
+  ></v-treeview></td>
+        </tr>
+        </tbody>
+        
       </table>
     </v-container>
+
     
     <div class="btn-container">
         <div class="github-btn">
@@ -43,7 +52,37 @@ export default {
         name: "川北智也",
         univ: "同志社大学理工学部\nインテリジェント情報工学科",
         email: "tommycsth61 [at] gmail.com",
-      }
+        hobby: "競技プログラミング/サイクリング"
+      },
+      items: [
+        {
+        id: 1,
+        name: "math:",
+        children:[
+          { id: 2, name: "数理統計学" },
+            { id: 3, name: '線形代数' },
+            { id: 4, name: 'グラフ理論' }
+        ],
+        },
+        {
+        id:5,
+        name: "computer science:",
+        children:[
+          { id: 6, name: "アルゴリズム" },
+          { id: 7, name: "コンパイラ" },
+          { id: 8, name: "機械学習" },
+        ]
+        },
+        {
+          id:8,
+          name: "type of job:",
+          children:[
+            { id: 6, name: "Webエンジニア" },
+            { id: 7, name: "データサイエンティスト" },
+          ]
+        }
+        
+      ]
     };
   }
 };
@@ -63,18 +102,27 @@ export default {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  table-layout: auto;
+  border-collapse: collapse;
 }
 .about {
   margin-top: 100px;
   width: 100%;
 }
+th {
+  padding-left: 5px;
+}
 td {
   padding-left: 30px;
+  
 }
-th,
-td {
+th, td {
   letter-spacing: 2px;
   font-size: 20px;
+  text-align: left;
+  border-bottom: 1px solid lightgrey;
+  color: #2c3e50;
+  
 }
 span {
   color: #00acee;
