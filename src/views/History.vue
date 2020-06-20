@@ -6,7 +6,7 @@
         <v-row>
           <v-col>
             <v-timeline :dense="$vuetify.breakpoint.smAndDown">
-              <v-timeline-item>
+              <v-timeline-item color="orange darken-2">
                 <v-card  color="orange darken-2" max-width="600">
                   <v-card-title
                     class="font-weight-bold text-justify"
@@ -43,7 +43,7 @@
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item>
+              <v-timeline-item color="orange darken-2">
                 <v-card color="orange darken-2" href="https://wapiwapi1729.wixsite.com/website">
                   <v-card-title
                     class="font-weight-bold orange darken-2 text-justify"
