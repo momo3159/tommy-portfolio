@@ -2,7 +2,7 @@
   <div id="skills">
     <span class="head">SKILLS</span>
     <v-app>
-      <v-container class="mt-10">
+      <v-container class="mt-10 ms-auto">
         <v-row>
           <v-col
             cols="12"
