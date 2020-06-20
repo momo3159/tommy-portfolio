@@ -13,13 +13,13 @@
       <v-row>
         <v-col cols="12">
           <v-btn class="mx-2" large href="https://github.com/momo3159">
-            <v-fa :icon="['fab', 'github']">github</v-fa>
+            <v-fa :icon="['fab', 'github']" size="lg" pull="left"></v-fa>github
           </v-btn>
           <v-btn class="mx-2" large href="https://twitter.com/0028272826s">
-            <v-fa :icon="['fab', 'twitter']">Twitter</v-fa>
+            <v-fa :icon="['fab', 'twitter']" size="lg" pull="left"></v-fa>Twitter
           </v-btn>
           <v-btn class="mx-2" large href="https://atcoder.jp/users/Tommy3">
-             <v-fa icon="laptop-code">AtCoder</v-fa>
+             <v-fa icon="laptop-code" size="lg" pull="left"></v-fa>AtCoder
           </v-btn>
         </v-col>
       </v-row>
