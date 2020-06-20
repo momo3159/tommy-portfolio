@@ -12,13 +12,13 @@
       </table>
       <v-row>
         <v-col cols="12">
-          <v-btn class="mx-2" fab large color="white" href="https://github.com/momo3159">
+          <v-btn class="mx-2" large href="https://github.com/momo3159">
             <v-fa :icon="['fab', 'github']"></v-fa>
           </v-btn>
-          <v-btn class="mx-2" fab large color="#4FC3F7" href="https://twitter.com/0028272826s">
+          <v-btn class="mx-2" large href="https://twitter.com/0028272826s">
             <v-fa :icon="['fab', 'twitter']"></v-fa>
           </v-btn>
-          <v-btn class="mx-2" fab large color="cyan" href="https://atcoder.jp/users/Tommy3">
+          <v-btn class="mx-2" large href="https://atcoder.jp/users/Tommy3">
              <v-fa icon="laptop-code"></v-fa>
           </v-btn>
         </v-col>
