@@ -39,7 +39,7 @@
 
 #nav a {
   font-weight: bold;
-  color: blue;
+  color: #1E88E5;
   display: block;
   width: 20%;
   float: left;
@@ -47,7 +47,7 @@
 }
 
 #nav a.router-link-exact-active {
-  color: orange;
+  color: #FF8F00;
 }
 
 #nav a:hover {
