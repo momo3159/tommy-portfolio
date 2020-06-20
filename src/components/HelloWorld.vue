@@ -19,6 +19,15 @@ export default {
 h1 {
   font-family: "Orbitron", sans-serif;
   letter-spacing: 7px;
-  
+  position: relative;
+  top: 400px;
+  margin: 0 auto;
+
+}
+@media(max-width: 670px){
+  h1 {
+    top: 200px;
+  }
+   
 }
 </style>
