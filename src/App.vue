@@ -27,28 +27,40 @@
 }
 
 #nav {
-  padding: 30px;
+  height: 80px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   padding-bottom: 0;
   width: 100%;
   background-color: #EEEEEE;
+  position: fixed;
+  top: 0px;
+  z-index:10;
 }
 
 #nav a {
   font-weight: bold;
   color: blue;
-  display: inline-block;
+  display: block;
   width: 20%;
+  float: left;
+  line-height: 80px;
 }
 
 #nav a.router-link-exact-active {
   color: orange;
 }
 
+#nav a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 670px) {
+  #nav {
+    height: 90px;
+  }
   #nav a {
-    padding-bottom: 10px;
     width: 50%;
+    line-height: 30px;
   }
 }
 </style>

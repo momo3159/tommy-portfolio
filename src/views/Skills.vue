@@ -2,19 +2,19 @@
   <div id="skills">
     <span class="head">SKILLS</span>
     <v-app>
-      <v-container>
+      <v-container class="mt-10">
         <v-row>
           <v-col
             cols="12"
             xs="12"
             sm="6"
-            md="3"
-            lg="3"
+            md="4"
+            lg="4"
             v-for="skill in skills"
             v-bind:key="skill.name"
             align="center"
           >
-            <v-card max-width="200" class="card">
+            <v-card max-width="400" class="card">
               <v-progress-circular
                 class="mt-auto"
                 :rotate="-90"
@@ -26,7 +26,7 @@
                 {{ skill.name }}<br />
                 {{ skill.per }}%
               </v-progress-circular>
-              <v-card-text>{{skill.month}}年</v-card-text>
+              <v-card-text class="text-left mt-auto">{{skill.content}}</v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -43,14 +43,12 @@ export default {
   data: function() {
     return {
       skills: [
-        { name: "Python", per: 10, month: 0 },
-        { name: "Java", per: 10, month: 0 },
-        { name: "C", per: 50, month: 0 },
-        { name: "C++", per: 90, month: 0 },
-        { name: "JavaScript", per: 50, month: 0 },
-        { name: "Vue.js", per: 100, month: 0 },
-        { name: "Go", per: 10, month: 0 },
-        { name: "Git", per: 12, month: 0 }
+        { name: "Python", per: 10, content:"機械学習の勉強や、ちょっとしたコードを書く時に用いています。" },
+        { name: "Java", per: 40, content: "大学の講義で勉強しています。2年生の時にGUIライブラリのJavaFxを、現在サーバーサイドのJavaを勉強しています。オブジェクト指向に強くなりたいです。"},
+        { name: "C", per: 50, content: "大学の講義で勉強しました。現在はアルゴリズムやネットワークプログラミングの勉強で用いています"},
+        { name: "C++", per: 40, content: "競技プログラミングで用いています。" },
+        { name: "JavaScript", per: 20, content: "Webアプリ開発で用いています。" },
+        { name: "Vue.js", per: 20, content: "このポートフォリオを作成するにあたって勉強を始めました。"},
       ]
     };
   },
@@ -74,6 +72,5 @@ export default {
   font-size: 40px;
   font-weight: bold;
   border-bottom: 3px solid;
-
 }
 </style>

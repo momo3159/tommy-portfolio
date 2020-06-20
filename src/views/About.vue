@@ -1,7 +1,8 @@
 <template>
   <div class="about">
-    <h1 class="head">ABOUT ME</h1>
-    <v-container>
+    <sapn class="head">ABOUT ME</sapn>
+    <v-app>
+    <v-container class="mt-10">
       <table class="aboutTable">
         <tr v-for="(value, key) in info" v-bind:key="key">
           <v-row class="mt-4">
@@ -29,6 +30,7 @@
           </v-btn>
         </div>
       </div>
+      </v-app>
   </div>
 </template>
 
@@ -49,9 +51,13 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+*{
+  font-family: "Orbitron", sans-serif;
+}
 .head {
-  margin-bottom: 30px;
-  font-size: 40px;
+    font-size: 40px;
+  font-weight: bold;
+  border-bottom: 3px solid;
 }
 .aboutTable {
   text-align: left;

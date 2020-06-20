@@ -72,8 +72,10 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
-.history {
+*{
   font-family: "Orbitron", sans-serif;
+}
+.history {
   margin-top: 100px;
 }
 .head {
