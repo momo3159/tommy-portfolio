@@ -59,6 +59,21 @@
                   >
                 </v-card>
               </v-timeline-item>
+              <v-timeline-item>
+                <v-card
+                  max-width="1000" color="blue darken-2"
+                >
+                  <v-card-title class="font-weight-bold text-justify">
+                    <span>三菱UFJインフォメーションテクノロジー サマーインターン</span>
+                  </v-card-title>
+                  <v-card-subtitle class="text-right mt-auto">
+                    2020.8.10〜2020.8.14</v-card-subtitle
+                  >
+                  <v-card-text class="text-left white mt-auto"
+                    >ハッカソン形式でアプリケーション開発を行いました。フロントエンドはVue.js、バックエンドはAWSを用いました。フロントエンドを担当しました。
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
             </v-timeline>
           </v-col>
         </v-row>
