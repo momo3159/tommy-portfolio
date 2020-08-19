@@ -41,6 +41,9 @@ export default {
         {name: 'テトリス', lang: "Java/JavaFx", content: "テトリスを自作しました。", link: "https://github.com/momo3159/BlockGame"}, 
       ]
     };
+  },
+  mounted: function(){
+    console.log(process.env.NODE_ENV);
   }
 };
 </script>
