@@ -62,7 +62,7 @@
                   </v-card-title>
                   <v-card-subtitle class="text-right mt-auto">2020.8.17〜2020.8.21</v-card-subtitle>
                   <v-card-text class="text-left white mt-auto">
-                    ハッカソン形式でアプリケーション開発を行いました。
+                    Vue.js, Firebase, いい生活様のAPIを用いたアプリケーション開発をハッカソン形式で行いました。
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
