@@ -44,6 +44,7 @@ export default {
   },
   mounted: function(){
     console.log(process.env.NODE_ENV);
+    console.log(process.env.VUE_APP_API_BASE_URL);
   }
 };
 </script>
