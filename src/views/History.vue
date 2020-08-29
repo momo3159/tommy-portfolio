@@ -57,7 +57,7 @@
               </v-timeline-item>
               <v-timeline-item color="orange darken-2">
                 <v-card color="orange darken-2">
-                  <v-card-title class="font-weight-bold orange darken-2　text-justify">
+                  <v-card-title class="font-weight-bold orange darken-2 text-justify">
                     <span>株式会社いい生活 サマーインターン</span>
                   </v-card-title>
                   <v-card-subtitle class="text-right mt-auto">2020.8.17〜2020.8.21</v-card-subtitle>
