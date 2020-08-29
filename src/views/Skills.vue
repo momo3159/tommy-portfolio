@@ -43,12 +43,12 @@ export default {
   data: function() {
     return {
       skills: [
-        { name: "Python", per: 10, content:"機械学習の勉強や、ちょっとしたコードを書く時に用いています。" },
+        { name: "Python", per: 40, content:"機械学習の勉強や、ちょっとしたコードを書く時に用いています。" },
         { name: "Java", per: 40, content: "大学の講義で勉強しています。2年生の時にGUIライブラリのJavaFxを、現在サーバーサイドのJavaを勉強しています。オブジェクト指向に強くなりたいです。"},
         { name: "C", per: 50, content: "大学の講義で勉強しました。現在はアルゴリズムやネットワークプログラミングの勉強で用いています"},
         { name: "C++", per: 40, content: "競技プログラミングで用いています。" },
-        { name: "JavaScript", per: 20, content: "Webアプリ開発で用いています。" },
-        { name: "Vue.js", per: 20, content: "このポートフォリオを作成するにあたって勉強を始めました。"},
+        { name: "JavaScript", per: 50, content: "Webアプリ開発で用いています。" },
+        { name: "Vue.js", per: 40, content: "このポートフォリオを作成するにあたって勉強を始めました。"},
       ]
     };
   },
