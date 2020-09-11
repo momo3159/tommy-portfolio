@@ -69,11 +69,33 @@
               <v-timeline-item>
                 <v-card max-width="1000" color="blue darken-2">
                   <v-card-title class="font-weight-bold text-justify">
-                    <span>株式会社MOTEX</span>
+                    <span>株式会社MOTEX サマーインターン</span>
                   </v-card-title>
                   <v-card-subtitle class="text-right mt-auto">2020.8.24〜2020.8.28</v-card-subtitle>
                   <v-card-text class="text-left white mt-auto">
                     Python, AWS, ChatWork APIを用いた業務アプリの開発を行いました。
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
+              <v-timeline-item color="orange darken-2">
+                <v-card color="orange darken-2">
+                  <v-card-title class="font-weight-bold orange darken-2 text-justify">
+                    <span>ニフティ株式会社 サマーインターン</span>
+                  </v-card-title>
+                  <v-card-subtitle class="text-right mt-auto">2020.9.2〜2020.9.4</v-card-subtitle>
+                  <v-card-text class="text-left white mt-auto">
+                    実務データに近いものを用いてデータ分析を行いました。
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
+              <v-timeline-item>
+                <v-card max-width="1000" color="blue darken-2">
+                  <v-card-title class="font-weight-bold text-justify">
+                    <span>株式会社ナビタイム サマーインターン</span>
+                  </v-card-title>
+                  <v-card-subtitle class="text-right mt-auto">2020.9.7〜2020.9.11</v-card-subtitle>
+                  <v-card-text class="text-left white mt-auto">
+                    ナビタイムのAPIを用いたWebサイト作成を行いました。
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
