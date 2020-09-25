@@ -43,12 +43,15 @@ export default {
   data: function() {
     return {
       skills: [
-        { name: "Python", per: 40, content:"機械学習の勉強や、ちょっとしたコードを書く時に用いています。" },
-        { name: "Java", per: 40, content: "大学の講義で勉強しています。2年生の時にGUIライブラリのJavaFxを、現在サーバーサイドのJavaを勉強しています。オブジェクト指向に強くなりたいです。"},
-        { name: "C", per: 50, content: "大学の講義で勉強しました。現在はアルゴリズムやネットワークプログラミングの勉強で用いています"},
+        { name: "C", per: 50, content: "大学の講義で勉強しました。現在はアルゴリズムやネットワークプログラミングの勉強で用いています。"},
         { name: "C++", per: 40, content: "競技プログラミングで用いています。" },
+        { name: "Python", per: 40, content:"機械学習の勉強や、ちょっとしたコードを書く時に用いています。最近はFlaskを用いてAPIを書きました。" },
+        { name: "Java", per: 40, content: "大学の講義で勉強しました。2年生の時にGUIライブラリのJavaFxを、3年生の時にサーバーサイドのJavaを扱いました。オブジェクト指向に強くなりたいです。"},
         { name: "JavaScript", per: 50, content: "Webアプリ開発で用いています。" },
-        { name: "Vue.js", per: 40, content: "このポートフォリオを作成するにあたって勉強を始めました。"},
+        { name: "TypeScript", per: 10, content: "型があると便利そうだなぁと思って勉強を始めました。" },
+        { name: "Vue.js", per: 40, content: "このポートフォリオを作成するにあたって勉強を始めました。インターンなどで使用しました。"},
+        { name: "React.js", per: 10, content: "Reactも触ってみたいと思い勉強を始めました。"},
+        { name: "Go", per: 10, content: "サーバーサイドを勉強するにあたり、Goに手をつけました。文法がシンプルで良いなぁと思っています。"},
       ]
     };
   },
