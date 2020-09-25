@@ -99,6 +99,18 @@
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
+              <v-timeline-item color="orange darken-2">
+                <v-card color="orange darken-2">
+                  <v-card-title class="font-weight-bold orange darken-2 text-justify">
+                    <span>〇〇社</span>
+                  </v-card-title>
+                  <v-card-subtitle class="text-right mt-auto">2020.mm.dd〜2020.mm.dd</v-card-subtitle>
+                  <v-card-text class="text-left white mt-auto">
+                    Vue.js/Flask/PostgreSQL/Heroku/推薦アルゴリズムを用いたアプリ開発を行いました。
+                    フロントエンドとバックエンドの開発を担当しました。
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
             </v-timeline>
           </v-col>
         </v-row>
