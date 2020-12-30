@@ -1,6 +1,7 @@
 <template>
   <div class="history">
     <span class="head">HISTORY</span>
+    <a href='#' v-scroll-to="'#element'">Scroll</a>
     <v-app>
       <v-container class="mt-10">
         <v-row>
@@ -127,6 +128,9 @@
         </v-row>
       </v-container>
     </v-app>
+    <div id="element">
+      Hi!
+    </div>
   </div>
 </template>
 
