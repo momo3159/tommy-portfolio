@@ -8,12 +8,26 @@
       <router-link to="/works">Works</router-link>
       <a></a>
     </div>
-    <router-view />
-
+    <!-- <router-view /> -->
+    <home></home>
+    <about></about>
+    <skills></skills>
+    <history></history>
+    <works></works>
   </div>
 </template>
 
-
+<script>
+import About from "./views/About.vue";
+import History from "./views/History.vue";
+import Home from "./views/Home.vue";
+import Skills from "./views/Skills.vue";
+import Works from "./views/Works.vue";
+export default {
+  components: { About, Skills, Works, History, Home },
+  name: "App",
+};
+</script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
@@ -31,15 +45,15 @@
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   padding-bottom: 0;
   width: 100%;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   position: fixed;
   top: 0px;
-  z-index:10;
+  z-index: 10;
 }
 
 #nav a {
   font-weight: bold;
-  color: #1E88E5;
+  color: #1e88e5;
   display: block;
   width: 20%;
   float: left;
@@ -47,7 +61,7 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #FF8F00;
+  color: #ff8f00;
 }
 
 #nav a:hover {
