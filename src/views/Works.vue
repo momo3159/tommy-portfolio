@@ -16,9 +16,17 @@
                 <v-btn
                   text
                   color="deep-purple accent-4"
-                  :href="work.link"
+                  :href="work.url"
                 >
                   <v-fa :icon="['fab', 'github']" size="lg" pull="left"></v-fa>github
+                </v-btn>
+                <v-btn
+                  v-if="work.url1"
+                  text
+                  color="deep-purple accent-4"
+                  :href="work.url1"
+                >
+                  <v-fa :icon="['fab', work.dst]" size="lg" pull="left"></v-fa>{{work.dst}}
                 </v-btn>
               </v-card-actions>
             </v-card>
@@ -36,9 +44,10 @@ export default {
   data: function() {
     return {
       works: [
-        {name: 'ポートフォリオ', lang:"HTML/CSS/vue.js", content:"ポートフォリオです。フロントエンドに（ほぼ）初挑戦で作りました。SPA対応などに挑戦しました。", link:"https://github.com/momo3159/tommy-portfolio"},
-        {name: '読書管理アプリ', lang:"HTML/CSS/JavaScript", content: "google books apiを用いました。本を何%読んだかを記録します。これもvue.jsで書き換えたいと思っています。", link:"https://github.com/momo3159/Reading-Progress-Management.io"},
-        {name: 'テトリス', lang: "Java/JavaFx", content: "テトリスを自作しました。", link: "https://github.com/momo3159/BlockGame"}, 
+        {name: 'ポートフォリオ', lang:"HTML/CSS/Vue.js", content:"ポートフォリオです。フロントエンドに（ほぼ）初挑戦で作りました。SPA対応などに挑戦しました。", url:"https://github.com/momo3159/tommy-portfolio"},
+        {name: '読書管理アプリ', lang:"HTML/CSS/JavaScript", content: "google books apiを用いました。本を何%読んだかを記録します。これもvue.jsで書き換えたいと思っています。", url:"https://github.com/momo3159/Reading-Progress-Management.io"},
+        {name: 'テトリス', lang: "Java/JavaFx", content: "テトリスを自作しました。", url: "https://github.com/momo3159/BlockGame"}, 
+        {name: 'BETTeR-class', lang: 'HTML/CSS/Vue.js', content: 'e-classから課題の情報を取得し、管理するChrome拡張を作りました。', url: 'https://github.com/momo3159/BETTeR-class', url1: 'https://chrome.google.com/webstore/detail/better-class/nnpcnagpahjgfimobmehmijldibkdpan?hl=ja', dst: 'chrome'},
       ]
     };
   },

@@ -111,6 +111,17 @@
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
+              <v-timeline-item>
+                <v-card max-width="1000" color="blue darken-2">
+                  <v-card-title class="font-weight-bold text-justify">
+                    <span>株式会社ACCESS ウィンターインターン</span>
+                  </v-card-title>
+                  <v-card-subtitle class="text-right mt-auto">2020.12.15</v-card-subtitle>
+                  <v-card-text class="text-left white mt-auto">
+                    chromiumベースのブラウザの機能拡張やUIの作成を行いました。
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
             </v-timeline>
           </v-col>
         </v-row>
