@@ -1,5 +1,5 @@
 <template>
-  <div class="works">
+  <div id="works">
     <span class="head">WORKS</span>
     <v-container class="mt-10">
       <v-row>
@@ -102,7 +102,7 @@ export default {
   margin: 5px;
   transition: all 0.7s;
 }
-.works {
+#works {
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;

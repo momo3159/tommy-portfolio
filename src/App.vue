@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+  <v-app>
     <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/skills">Skills</router-link>
-      <router-link to="/history">History</router-link>
-      <router-link to="/works">Works</router-link>
+      <router-link to="/" v-scroll-to="'#home'">Home</router-link>
+      <router-link to="/about" v-scroll-to="'#about'">About</router-link>
+      <router-link to="/skills" v-scroll-to="'#skills'">Skills</router-link>
+      <router-link to="/history" v-scroll-to="'#history'">History</router-link>
+      <router-link to="/works" v-scroll-to="'#works'">Works</router-link>
       <a></a>
     </div>
     <!-- <router-view /> -->
@@ -14,7 +14,7 @@
     <skills></skills>
     <history></history>
     <works></works>
-  </div>
+  </v-app>
 </template>
 
 <script>

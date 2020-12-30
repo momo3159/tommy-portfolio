@@ -1,7 +1,6 @@
 <template>
-  <div class="history">
+  <div id="history">
     <span class="head">HISTORY</span>
-    <a href="#" v-scroll-to="'#element'">Scroll</a>
     <v-container class="mt-10">
       <v-row>
         <v-col>
@@ -165,7 +164,6 @@
         </v-col>
       </v-row>
     </v-container>
-    <div id="element">Hi!</div>
   </div>
 </template>
 
@@ -180,7 +178,7 @@ export default {
 * {
   font-family: "Orbitron", sans-serif;
 }
-.history {
+#history {
   margin-top: 100px;
 }
 .head {

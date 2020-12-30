@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div id="about">
     <span class="head">ABOUT ME</span>
     <v-container class="mt-10">
       <table class="aboutTable">
@@ -93,7 +93,7 @@ export default {
   table-layout: auto;
   border-collapse: collapse;
 }
-.about {
+#about {
   margin-top: 100px;
   width: 100%;
   height: auto;
@@ -113,7 +113,7 @@ td {
   color: #2c3e50;
 }
 
-.about .btn-container {
+#about .btn-container {
   width: 70%;
   margin: 0 auto;
   display: flex;
