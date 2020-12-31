@@ -2,33 +2,46 @@
   <div id="about">
     <span class="head">ABOUT ME</span>
     <v-container class="mt-10">
-      <table class="aboutTable">
-        <tbody>
-          <tr v-for="(value, key) in info" v-bind:key="key">
-            <th>{{ key }}</th>
-            <td>{{ value }}</td>
-          </tr>
-          <tr>
-            <th>interest</th>
-            <td><v-treeview dense :items="items"></v-treeview></td>
-          </tr>
-        </tbody>
-      </table>
+      <v-card>
+        <v-card-title
+          class="justify-center"
+          style="font-weight: bold; font-size: 25px"
+          >Tomoya Kawakita</v-card-title
+        >
+        <v-card-subtitle style="padding-top: 5px; padding-bottom: 5px"
+          >同志社大学理工学部インテリジェント情報工学科 3回</v-card-subtitle
+        >
+        <v-card-text style="padding-bottom: 3px">
+          Web開発・競技プログラミング・サイクリング <br />
+          tommycsth61 [at] gmail.com
+        </v-card-text>
+        <v-card-actions class="justify-center">
+          <a href="https://github.com/momo3159">
+            <v-btn icon>
+              <v-fa :icon="['fab', 'github']" size="2x"></v-fa>
+            </v-btn>
+          </a>
+          <a href="https://twitter.com/Tomm7282">
+            <v-btn icon>
+              <v-fa :icon="['fab', 'twitter']" size="2x"></v-fa>
+            </v-btn>
+          </a>
+          <a href="https://atcoder.jp/users/Tommy3">
+          
+            <v-btn outlined color="grey darken-2" small rounded> 
+              
+               <v-fa :icon="['fa', 'link']" size="lg"></v-fa>
+              AtCoder</v-btn>
+          </a>
+          <a href="https://qiita.com/tommy3">
+
+            <v-btn outlined color="grey darken-2" small rounded> 
+              <v-fa :icon="['fa', 'link']" size="lg"></v-fa>
+              Qiita </v-btn>
+          </a>
+        </v-card-actions>
+      </v-card>
     </v-container>
-    <div class="btn-container">
-      <a href="https://github.com/momo3159" class="github">
-        <v-fa :icon="['fab', 'github']" size="lg"></v-fa
-        ><span class="github-t">github</span></a
-      >
-      <a href="https://twitter.com/0028272826s" class="twitter">
-        <v-fa :icon="['fab', 'twitter']" size="lg"></v-fa
-        ><span class="twitter-t">twitter</span></a
-      >
-      <a href="https://atcoder.jp/users/Tommy3" class="atcoder">
-        <v-fa icon="laptop-code" size="lg"></v-fa
-        ><span class="atcoder-t">atcoder</span></a
-      >
-    </div>
   </div>
 </template>
 
@@ -37,39 +50,26 @@ export default {
   name: "About",
   data: function () {
     return {
-      info: {
-        name: "川北智也",
-        univ: "同志社大学理工学部\nインテリジェント情報工学科",
-        email: "tommycsth61 [at] gmail.com",
-        hobby: "競技プログラミング/サイクリング",
-      },
-      items: [
+      infos: [
+        { header: "Name", value: "川北智也", url: "" },
         {
-          id: 1,
-          name: "math:",
-          children: [
-            { id: 2, name: "数理統計学" },
-            { id: 3, name: "線形代数" },
-            { id: 4, name: "グラフ理論" },
-          ],
+          header: "univ",
+          value: "同志社大学理工学部\nインテリジェント情報工学科",
+          url: "",
+        },
+        { header: "email", value: "tommycsth61 [at] gmail.com", url: "" },
+        { header: "twitter", value: "Tomm7282", url: "" },
+        {
+          header: "github",
+          value: "momo3159",
+          url: "https://github.com/momo3159",
         },
         {
-          id: 5,
-          name: "computer science:",
-          children: [
-            { id: 6, name: "アルゴリズム" },
-            { id: 7, name: "コンパイラ" },
-            { id: 8, name: "機械学習" },
-          ],
+          header: "AtCoder",
+          value: "Tommy3",
+          url: "https://atcoder.jp/users/Tommy3",
         },
-        {
-          id: 8,
-          name: "type of job:",
-          children: [
-            { id: 6, name: "Webエンジニア" },
-            { id: 7, name: "データサイエンティスト" },
-          ],
-        },
+        { header: "Qiita", value: "tommy3", url: "https://qiita.com/tommy3" },
       ],
     };
   },
@@ -112,7 +112,9 @@ td {
   border-bottom: 1px solid lightgrey;
   color: #2c3e50;
 }
-
+a {
+  text-decoration: none;
+}
 #about .btn-container {
   width: 70%;
   margin: 0 auto;

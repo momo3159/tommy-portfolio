@@ -41,11 +41,11 @@ export default {
 }
 
 #nav {
-  height: 80px;
+  height: 50px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   padding-bottom: 0;
   width: 100%;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   position: fixed;
   top: 0px;
   z-index: 10;
@@ -57,7 +57,8 @@ export default {
   display: block;
   width: 20%;
   float: left;
-  line-height: 80px;
+  line-height: 50px;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
