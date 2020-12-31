@@ -14,17 +14,21 @@
           align="center"
         >
           <v-card max-width="400" class="card">
-            <v-progress-circular
-              class="mt-auto"
-              :rotate="-90"
-              :size="150"
-              :width="10"
-              :value="skill.per"
-              color="orange darken-2"
-            >
-              {{ skill.name }}<br />
-              {{ skill.per }}%
-            </v-progress-circular>
+            <img :src="skill.imgPath" />
+            <br />
+            {{ skill.name }}
+            <hr style="width: 80%" />
+            <v-rating
+              readonly
+              dense
+              :value="skill.rating"
+              full-icon="mdi-star"
+              half-icon="mdi-star-half"
+              empty-icon="mdi-star-outline"
+              half-increments
+              color="yellow darken-3"
+              background-color="grey darken-1"
+            ></v-rating>
             <v-card-text class="text-left mt-auto">{{
               skill.content
             }}</v-card-text>
@@ -45,49 +49,68 @@ export default {
       skills: [
         {
           name: "C",
-          per: 50,
           content:
             "大学の講義で勉強しました。現在はアルゴリズムやネットワークプログラミングの勉強で用いています。",
+          rating: 3,
+          imgPath: require("../assets/c.svg"),
         },
-        { name: "C++", per: 40, content: "競技プログラミングで用いています。" },
+        {
+          name: "C++",
+          content: "競技プログラミングで用いています。",
+          rating: 2,
+          imgPath: require("../assets/c-plusplus.svg"),
+        },
         {
           name: "Python",
-          per: 40,
           content:
             "機械学習の勉強や、ちょっとしたコードを書く時に用いています。最近はFlaskを用いてAPIを書きました。",
+          rating: 3,
+          imgPath: require("../assets/python.svg"),
         },
         {
           name: "Java",
-          per: 40,
           content:
             "大学の講義で勉強しました。2年生の時にGUIライブラリのJavaFxを、3年生の時にサーバーサイドのJavaを扱いました。オブジェクト指向に強くなりたいです。",
+          rating: 2,
+          imgPath: require("../assets/java.svg"),
         },
         {
           name: "JavaScript",
-          per: 50,
           content: "Webアプリ開発で用いています。",
+          rating: 3,
+          imgPath: require("../assets/javascript.svg"),
         },
         {
           name: "TypeScript",
-          per: 10,
           content: "型があると便利そうだなぁと思って勉強を始めました。",
+          rating: 1,
+          imgPath: require("../assets/typescript.svg"),
         },
         {
           name: "Vue.js",
-          per: 40,
           content:
             "このポートフォリオを作成するにあたって勉強を始めました。インターンなどで使用しました。",
+          rating: 3,
+          imgPath: require("../assets/vue.svg"),
         },
         {
           name: "React.js",
-          per: 10,
           content: "Reactも触ってみたいと思い勉強を始めました。",
+          rating: 1,
+          imgPath: require("../assets/react.svg"),
+        },
+        {
+          name: "Node.js",
+          content: "Reactも触ってみたいと思い勉強を始めました。",
+          rating: 1.5,
+          imgPath: require("../assets/nodejs.svg"),
         },
         {
           name: "Go",
-          per: 10,
           content:
             "サーバーサイドを勉強するにあたり、Goに手をつけました。文法がシンプルで良いなぁと思っています。",
+          rating: 3,
+          imgPath: require("../assets/go.svg"),
         },
       ],
     };
@@ -104,6 +127,11 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 * {
   font-family: "Orbitron", sans-serif;
+}
+img {
+  width: 120px;
+  height: 120px;
+  margin-top: 5px;
 }
 #skills {
   margin-top: 100px;
