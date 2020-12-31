@@ -1,19 +1,33 @@
 <template>
-  <div id="app">
+  <v-app>
     <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/skills">Skills</router-link>
-      <router-link to="/history">History</router-link>
-      <router-link to="/works">Works</router-link>
+      <router-link to="/" v-scroll-to="'#home'">Home</router-link>
+      <router-link to="/about" v-scroll-to="'#about'">About</router-link>
+      <router-link to="/skills" v-scroll-to="'#skills'">Skills</router-link>
+      <router-link to="/history" v-scroll-to="'#history'">History</router-link>
+      <router-link to="/works" v-scroll-to="'#works'">Works</router-link>
       <a></a>
     </div>
-    <router-view />
-
-  </div>
+    <!-- <router-view /> -->
+    <home></home>
+    <about></about>
+    <skills></skills>
+    <history></history>
+    <works></works>
+  </v-app>
 </template>
 
-
+<script>
+import About from "./views/About.vue";
+import History from "./views/History.vue";
+import Home from "./views/Home.vue";
+import Skills from "./views/Skills.vue";
+import Works from "./views/Works.vue";
+export default {
+  components: { About, Skills, Works, History, Home },
+  name: "App",
+};
+</script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
@@ -23,31 +37,32 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #212121;
 }
 
 #nav {
-  height: 80px;
+  height: 50px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   padding-bottom: 0;
   width: 100%;
-  background-color: #EEEEEE;
+  background-color: #ffffff;
   position: fixed;
   top: 0px;
-  z-index:10;
+  z-index: 10;
 }
 
 #nav a {
   font-weight: bold;
-  color: #1E88E5;
+  color: #304FFE;
   display: block;
   width: 20%;
   float: left;
-  line-height: 80px;
+  line-height: 50px;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
-  color: #FF8F00;
+  color: #6200EA;
 }
 
 #nav a:hover {
