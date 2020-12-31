@@ -109,7 +109,7 @@ export default {
           name: "Go",
           content:
             "サーバーサイドを勉強するにあたり、Goに手をつけました。文法がシンプルで良いなぁと思っています。",
-          rating: 3,
+          rating: 1,
           imgPath: require("../assets/go.svg"),
         },
       ],

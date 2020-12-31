@@ -3,16 +3,15 @@
     <span class="head">ABOUT ME</span>
     <v-container class="mt-10">
       <v-card>
-        <v-card-title
-          class="justify-center"
-          style="font-weight: bold; font-size: 25px"
+        <v-card-title class="justify-center card-title"
           >Tomoya Kawakita</v-card-title
         >
-        <v-card-subtitle style="padding-top: 5px; padding-bottom: 5px"
+        <v-card-subtitle
           >同志社大学理工学部インテリジェント情報工学科 3回</v-card-subtitle
         >
-        <v-card-text style="padding-bottom: 3px">
+        <v-card-text>
           Web開発・競技プログラミング・サイクリング <br />
+          AtCoder: 灰 / Paiza: Sランク <br />
           tommycsth61 [at] gmail.com
         </v-card-text>
         <v-card-actions class="justify-center">
@@ -27,17 +26,16 @@
             </v-btn>
           </a>
           <a href="https://atcoder.jp/users/Tommy3">
-          
-            <v-btn outlined color="grey darken-2" small rounded> 
-              
-               <v-fa :icon="['fa', 'link']" size="lg"></v-fa>
-              AtCoder</v-btn>
+            <v-btn outlined color="grey darken-2" small rounded>
+              <v-fa :icon="['fa', 'link']" size="lg"></v-fa>
+              AtCoder</v-btn
+            >
           </a>
           <a href="https://qiita.com/tommy3">
-
-            <v-btn outlined color="grey darken-2" small rounded> 
+            <v-btn outlined color="grey darken-2" small rounded>
               <v-fa :icon="['fa', 'link']" size="lg"></v-fa>
-              Qiita </v-btn>
+              Qiita
+            </v-btn>
           </a>
         </v-card-actions>
       </v-card>
@@ -81,6 +79,9 @@ export default {
 * {
   font-family: "Orbitron", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 .head {
   font-size: 40px;
   font-weight: bold;
@@ -98,72 +99,17 @@ export default {
   width: 100%;
   height: auto;
 }
-th {
-  padding-left: 5px;
+
+.card-title {
+  font-weight: bold;
+  font-size: 25px;
 }
-td {
-  padding-left: 30px;
-}
-th,
-td {
-  letter-spacing: 2px;
-  font-size: 20px;
-  text-align: left;
-  border-bottom: 1px solid lightgrey;
-  color: #2c3e50;
-}
-a {
-  text-decoration: none;
-}
-#about .btn-container {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
-.github,
-.twitter,
-.atcoder {
-  margin-right: 10px;
-  background-color: #eeeeee;
-  height: 50px;
-  line-height: 50px;
-  width: 200px;
-  border-radius: 5px;
-  box-shadow: 0 5px gray;
-}
-.github:active,
-.twitter:active,
-.atcoder:active {
-  box-shadow: none;
-  position: relative;
-  top: 5px;
-}
-.twitter {
-  color: #00acee;
-}
-.github,
-.atcoder {
-  color: #171515;
-}
-.github-t,
-.twitter-t,
-.atcoder-t {
-  padding-left: 5px;
-}
+
+
 @media (max-width: 670px) {
   th,
   td {
     font-size: 12px;
-  }
-  .btn-container {
-    flex-direction: column;
-  }
-  .github,
-  .twitter,
-  .atcoder {
-    margin: 10px auto;
   }
 }
 </style>
