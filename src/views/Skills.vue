@@ -101,7 +101,7 @@ export default {
         },
         {
           name: "Node.js",
-          content: "Reactも触ってみたいと思い勉強を始めました。",
+          content: "",
           rating: 1.5,
           imgPath: require("../assets/nodejs.svg"),
         },
@@ -139,6 +139,6 @@ img {
 .head {
   font-size: 40px;
   font-weight: bold;
-  border-bottom: 3px solid;
+  border-bottom: 3px solid #304ffe;
 }
 </style>

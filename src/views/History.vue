@@ -8,15 +8,19 @@
             <v-timeline-item
               v-for="(history, i) in histories"
               :key="`${history.title}-${history.term}`"
-              :color="`${TIMELINE_ITEM_COLOR[i % 2]} darken-2`"
+              :color="`${TIMELINE_ITEM_COLOR[i % 2]} accent-4`"
             >
-              <v-card :color="`${TIMELINE_ITEM_COLOR[i % 2]} darken-2`">
+              <v-card 
+              
+          >
                 <h6 class="history-title">
                   {{ history.title }}
                 </h6>
                 <v-card-subtitle :class="`mt-auto`">
-                  {{ history.term }}
+                  <span :styles="`border-bottom: 2px solid ${TIMELINE_ITEM_COLOR[i%2]} accent-4;`">{{ history.term }}</span>
                 </v-card-subtitle>
+                
+                
                 <v-card-text :class="`white mt-auto`">
                   {{ history.body }}
                 </v-card-text>
@@ -34,7 +38,7 @@ export default {
   name: "History",
   data() {
     return {
-      TIMELINE_ITEM_COLOR: ["orange", "blue"],
+      TIMELINE_ITEM_COLOR: ["deep-purple", "indigo"],
       TIMELINE_ITEM_POSITION: ["left", "right"],
       histories: [
         {
@@ -113,7 +117,7 @@ export default {
 .head {
   font-size: 40px;
   font-weight: bold;
-  border-bottom: 3px solid;
+    border-bottom: 3px solid #304FFE;
 }
 #timeline {
   width: 80%;
@@ -125,9 +129,16 @@ export default {
   padding-top: 10px;
 }
 span {
-  color: #2c3e50;
+  color: #212121;
 }
-v-card-subtitle {
+.card-subtitle {
   padding-top: 3px;
 }
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
 </style>

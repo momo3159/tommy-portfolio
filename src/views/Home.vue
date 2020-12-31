@@ -4,12 +4,12 @@
     <div class="particle-container">
       <vue-particles
         class="particle"
-        color="#1E88E5"
+        color="#2962FF"
         :particleOpacity="0.9"
         :particlesNumber="80"
         shapeType="circle"
         :particleSize="20"
-        linesColor="#FF8F00"
+        linesColor="#304FFE"
         :linesWidth="3"
         :lineLinked="true"
         :lineOpacity="0.7"
@@ -58,7 +58,7 @@ export default {
   margin: 0 auto;
   font-weight: bold;
   font-size: 60px;
-  color: #d84315;
+  color: #DD2C00;
 }
 @media (max-width: 670px) {
   .particle {

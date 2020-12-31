@@ -85,7 +85,7 @@ a {
 .head {
   font-size: 40px;
   font-weight: bold;
-  border-bottom: 3px solid;
+  border-bottom: 3px solid #304FFE;
 }
 .aboutTable {
   text-align: left;
