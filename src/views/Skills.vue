@@ -10,7 +10,7 @@
           md="4"
           lg="4"
           v-for="skill in skills"
-          v-bind:key="skill.name"
+          :key="skill.name"
           align="center"
         >
           <v-card max-width="400" class="card">
@@ -40,8 +40,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: "Skills",
   data: function () {
@@ -114,11 +112,6 @@ export default {
         },
       ],
     };
-  },
-  computed: {
-    getYear: function (i) {
-      return this.month[i];
-    },
   },
 };
 </script>
