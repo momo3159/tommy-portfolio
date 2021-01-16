@@ -3,37 +3,35 @@
     <span class="head">ABOUT ME</span>
     <v-container class="mt-10">
       <v-row justify="center">
-        <v-col cols="4">
-          <v-card>
+        <v-col align="center">
+          <v-card max-width="400">
             <v-card-title class="justify-center card-title"
-              >Tomoya Kawakita</v-card-title
-            >
-            <v-card-subtitle
-              >同志社大学理工学部インテリジェント情報工学科 3回</v-card-subtitle
+              >{{aboutMe.name}}</v-card-title
             >
             <v-card-text>
-              Web開発・競技プログラミング・サイクリング <br />
-              AtCoder: 灰 / Paiza: Sランク <br />
-              tommycsth61 [at] gmail.com
+              {{aboutMe.univ}} <br/>
+              {{aboutMe.hobby}} <br />
+              {{aboutMe.rank}} <br />
+              {{aboutMe.email}}
             </v-card-text>
             <v-card-actions class="justify-center">
-              <a href="https://github.com/momo3159">
+              <a href="aboutMe.github.url">
                 <v-btn icon>
                   <v-fa :icon="['fab', 'github']" size="2x"></v-fa>
                 </v-btn>
               </a>
-              <a href="https://twitter.com/Tomm7282">
+              <a href="aboutMe.twitter.url">
                 <v-btn icon>
                   <v-fa :icon="['fab', 'twitter']" size="2x"></v-fa>
                 </v-btn>
               </a>
-              <a href="https://atcoder.jp/users/Tommy3">
+              <a href="aboutMe.atcoder.url">
                 <v-btn outlined color="grey darken-2" small rounded>
                   <v-fa :icon="['fa', 'link']" size="lg"></v-fa>
                   AtCoder</v-btn
                 >
               </a>
-              <a href="https://qiita.com/tommy3">
+              <a href="aboutMe.qiita.url">
                 <v-btn outlined color="grey darken-2" small rounded>
                   <v-fa :icon="['fa', 'link']" size="lg"></v-fa>
                   Qiita
@@ -52,27 +50,25 @@ export default {
   name: "About",
   data: function () {
     return {
-      infos: [
-        { header: "Name", value: "川北智也", url: "" },
-        {
-          header: "univ",
-          value: "同志社大学理工学部\nインテリジェント情報工学科",
-          url: "",
+      aboutMe: {
+        name: "川北智也",
+        univ: "同志社大学理工学部\nインテリジェント情報工学科",
+        email: "tommycsth61 [at] gmail.com",
+        hobby: "Web開発・競技プログラミング・サイクリング",
+        rank: "AtCoder: 灰 / Paiza: Sランク",
+        twitter: {
+          url: "https://twitter.com/Tomm7282",
         },
-        { header: "email", value: "tommycsth61 [at] gmail.com", url: "" },
-        { header: "twitter", value: "Tomm7282", url: "" },
-        {
-          header: "github",
-          value: "momo3159",
+        github: {
           url: "https://github.com/momo3159",
         },
-        {
-          header: "AtCoder",
-          value: "Tommy3",
+        atcoder: {
           url: "https://atcoder.jp/users/Tommy3",
         },
-        { header: "Qiita", value: "tommy3", url: "https://qiita.com/tommy3" },
-      ],
+        qiita: {  
+          url: "https://qiita.com/tommy3" 
+        },
+      },
     };
   },
 };
@@ -107,12 +103,5 @@ a {
 .card-title {
   font-weight: bold;
   font-size: 25px;
-}
-
-@media (max-width: 670px) {
-  th,
-  td {
-    font-size: 12px;
-  }
 }
 </style>
