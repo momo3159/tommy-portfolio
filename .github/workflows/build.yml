@@ -28,6 +28,8 @@ jobs:
           
       - name: push built files
         run: |
+          git config --global user.email "tommydsha@gmail.com"
+          git config --global user.name "tkawakita"
           git add .
           git commit -m "build files"
           git push origin master
