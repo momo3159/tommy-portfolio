@@ -93,6 +93,15 @@ export default {
             },
           ],
         },
+        {
+          name: "自作ブログ",
+          lang: "React/TypeScript/Gatsby",
+          content: "Gatsbyを用いてブログを自作しました。Vercelにデプロイしています。",
+          links: [
+            { url: "https://github.com/momo3159/BlockGame", name: "github" },
+            { url: "https://t0mmy3.vercel.app", name: "ブログ" },
+          ],
+        },
       ],
     };
   },
