@@ -81,7 +81,7 @@ export default {
         {
           name: "TypeScript",
           content: "型があると便利そうだなぁと思って勉強を始めました。",
-          rating: 1,
+          rating: 2,
           imgPath: require("../assets/typescript.svg"),
         },
         {
@@ -94,7 +94,7 @@ export default {
         {
           name: "React.js",
           content: "Reactも触ってみたいと思い勉強を始めました。",
-          rating: 1,
+          rating: 3,
           imgPath: require("../assets/react.svg"),
         },
         {
