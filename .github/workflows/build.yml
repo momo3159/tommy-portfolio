@@ -1,0 +1,35 @@
+name: build files 
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Install Dependencies
+        run: |
+          yarn install
+
+      - name: Build
+        run: |
+          yarn build
+          
+      - name: push built files
+        run: |
+          git config --global user.email "tommydsha@gmail.com"
+          git config --global user.name "tkawakita"
+          git add .
+          git commit -m "build files"
+          git push origin master
