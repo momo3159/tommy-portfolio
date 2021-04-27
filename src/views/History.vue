@@ -101,11 +101,6 @@ export default {
           body: "chromiumベースのブラウザの機能拡張やUIの作成を行いました。",
         },
         {
-          title: "株式会社ACCESS ウィンターインターン",
-          term: "2020.12.15",
-          body: "chromiumベースのブラウザの機能拡張やUIの作成を行いました。",
-        },
-        {
           title: "NTTコミュニケーションズ k8sハンズオン",
           term: "2021.1.31",
           body: "",
