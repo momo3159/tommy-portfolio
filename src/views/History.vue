@@ -112,7 +112,12 @@ export default {
         },
          {
           title: "JX通信社",
-          term: "2021.4.14〜",
+          term: "2021.4.14〜2021.8.31",
+          body: "",
+        },
+        {
+          title: "MOTEX",
+          term: "2021.7.1〜2021.9.31",
           body: "",
         },
       ],
