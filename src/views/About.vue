@@ -55,7 +55,7 @@ export default {
         univ: "同志社大学理工学部\nインテリジェント情報工学科",
         email: "tommycsth61 [at] gmail.com",
         hobby: "Web開発・競技プログラミング・サイクリング",
-        rank: "AtCoder: 灰 / Paiza: Sランク",
+        rank: "AtCoder: 茶 / Paiza: Sランク",
         twitter: {
           url: "https://twitter.com/Tomm7282",
         },
